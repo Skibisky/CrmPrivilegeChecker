@@ -21,7 +21,6 @@ namespace CrmPrivilegeChecker {
 
 		public CrmPrivilegeCheckerControl() {
 			InitializeComponent();
-			tbError.Text = "System.ServiceModel.FaultException`1[Microsoft.Xrm.Sdk.OrganizationServiceFault]: Principal user (Id=35e3ad25-739f-e811-a980-000d3a81e2e0, type=8 , accessMode=4, roleCount=2 ) is missing prvAppendillumina_purchaseorder privilege (Id=a5ff94e8-fe9a-42e7-9366-274226d03a0b)";
 			cbRoles.Format += CbRoles_Format;
 			cbDepth.Format += CbDepth_Format;
 			foreach (var en in Enum.GetValues(typeof(PrivilegeDepth))) {
